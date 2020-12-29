@@ -38,8 +38,7 @@ namespace Kanban.Data
         {
             var logger = serviceProvider.GetRequiredService<ILogger<DatabaseUtils>>();
 
-            using (var context = new KanbanContext(
-                serviceProvider.GetRequiredService<DbContextOptions<KanbanContext>>()))
+            using (var context = new KanbanContext(serviceProvider.GetRequiredService<DbContextOptions<KanbanContext>>()))
             {
                 if (deleteDatabaseIfExists && context.Database.EnsureDeleted())
                 {
@@ -64,8 +63,7 @@ namespace Kanban.Data
         {
             var logger = serviceProvider.GetRequiredService<ILogger<DatabaseUtils>>();
 
-            using (var context = new KanbanContext(
-                serviceProvider.GetRequiredService<DbContextOptions<KanbanContext>>()))
+            using (var context = new KanbanContext(serviceProvider.GetRequiredService<DbContextOptions<KanbanContext>>()))
             {
                 if (context.People.Any())
                 {
