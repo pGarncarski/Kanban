@@ -1,12 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Kanban.Models
 {
     public class ProjectInfo
     {
+        public int ProjectInfoId { get; set; }
+
+        [Required]
+        [MaxLength(50)]
         public string Name { get; set; }
+
+        [Required]
+        [Column("Start")]
+        public DateTime StartDate { get; set; }
+
+        [Column("Finish")]
+        public DateTime? FinishDate { get; set; }
     }
 }

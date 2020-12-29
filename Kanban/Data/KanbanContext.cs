@@ -15,5 +15,15 @@ namespace Kanban.Data
         public DbSet<Issue> Issues { get; set; }
         public DbSet<ProjectInfo> Project { get; set; }
 
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<ProjectInfo>()
+                .HasIndex(x => x.Name)
+                .IsUnique();
+        }
+
     }
 }
