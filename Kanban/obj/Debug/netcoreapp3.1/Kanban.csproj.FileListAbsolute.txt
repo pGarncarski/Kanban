@@ -179,3 +179,8 @@ D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Details.cshtml.g.cs
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Edit.cshtml.g.cs
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Index.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Areas\Documentation\Views\Home\Index.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_IssueFields.cshtml.g.cs

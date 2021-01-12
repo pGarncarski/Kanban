@@ -48,7 +48,7 @@ namespace Kanban.Controllers
         // GET: Issue/Create
         public IActionResult Create()
         {
-            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Id");
+            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Name");
             // 1- Pass enum to View by ViewBag
             ViewBag.AllStates = new SelectList(Enum.GetValues(typeof(IssueState)), IssueState.Todo);
             return View();
@@ -67,7 +67,7 @@ namespace Kanban.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Id", issue.AssignedToId);
+            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Name", issue.AssignedToId);
             return View(issue);
         }
 
@@ -84,7 +84,7 @@ namespace Kanban.Controllers
             {
                 return NotFound();
             }
-            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Id", issue.AssignedToId);
+            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Name", issue.AssignedToId);
             return View(issue);
         }
 
@@ -120,7 +120,7 @@ namespace Kanban.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Id", issue.AssignedToId);
+            ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Name", issue.AssignedToId);
             return View(issue);
         }
 

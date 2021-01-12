@@ -26,8 +26,13 @@ namespace Kanban
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();
+            services.AddControllersWithViews()
+                .AddNewtonsoftJson(options =>
+                {
+                    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore; // cykliczne referencje (Issuje ma referencjê na Person, Person ma referencje na Issue)
+                });
             services.Configure<AppSettings>(Configuration);
+
             services.AddDbContext<KanbanContext>(options =>
             {
                 var appSettings = Configuration.Get<AppSettings>();
@@ -73,6 +78,11 @@ namespace Kanban
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Project}/{action=Index}/{id?}");
+
+                endpoints.MapAreaControllerRoute(
+                    name: "areas",
+                    areaName: "Documentation",
+                    pattern: "Documentation/{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

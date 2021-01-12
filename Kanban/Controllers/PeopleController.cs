@@ -19,6 +19,11 @@ namespace Kanban.Controllers
             _context = context;
         }
 
+        public async Task<ActionResult> AllData()
+        {
+            var data = await _context.People.Include(p => p.Issues).ToListAsync();
+            return Json(data);
+        }
         // GET: People
         public async Task<IActionResult> Index()
         {

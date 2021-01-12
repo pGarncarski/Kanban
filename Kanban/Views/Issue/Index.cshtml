@@ -46,7 +46,7 @@
                 @Html.DisplayFor(modelItem => item.IsUrgent)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.AssignedTo.Id)
+                @Html.DisplayFor(modelItem => item.AssignedTo.Name)
             </td>
             <td>
                 <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
