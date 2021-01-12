@@ -174,3 +174,8 @@ D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\People\Details.cshtml.g.cs
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\People\Edit.cshtml.g.cs
 D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\People\Index.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Create.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Delete.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Details.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Edit.cshtml.g.cs
+D:\IT\Programowanie\.NET\Kursy i szkolenia\Szkolenie ASP NET Core\Projekt\Kanban\Kanban\obj\Debug\netcoreapp3.1\Razor\Views\Issue\Index.cshtml.g.cs

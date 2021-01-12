@@ -45,7 +45,7 @@ namespace Kanban.Data
                     logger.LogInformation("Old database has been deleted");
                 }
                 if (context.Database.EnsureCreated())
-                {
+                { 
                     logger.LogInformation("New database has been created");
                     logger.LogInformation(context.Database.GenerateCreateScript());
                     return true;

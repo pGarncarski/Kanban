@@ -49,6 +49,8 @@ namespace Kanban.Controllers
         public IActionResult Create()
         {
             ViewData["AssignedToId"] = new SelectList(_context.People, "Id", "Id");
+            // 1- Pass enum to View by ViewBag
+            ViewBag.AllStates = new SelectList(Enum.GetValues(typeof(IssueState)), IssueState.Todo);
             return View();
         }
 
