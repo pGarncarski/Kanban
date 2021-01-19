@@ -154,5 +154,10 @@ namespace Kanban.Controllers
         {
             return _context.People.Any(e => e.Id == id);
         }
+
+        public ActionResult IsNameUnique(string Name)
+        {
+            return Json(_context.People.Any(p => p.Name == Name) ? (object)"Istnieje już osoba o podanej nazwie" : true);
+        }
     }
 }
