@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Kanban.Common;
 using Kanban.Data;
+using Kanban.Filters;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -26,12 +27,17 @@ namespace Kanban
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews()
+            services.Configure<AppSettings>(Configuration);
+
+            services.AddControllersWithViews(options =>
+                {
+                    options.Filters.Add(typeof(AuditLogFilterAttribute));
+                })
                 .AddNewtonsoftJson(options =>
                 {
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore; // cykliczne referencje (Issuje ma referencjê na Person, Person ma referencje na Issue)
                 });
-            services.Configure<AppSettings>(Configuration);
+            
 
             services.AddDbContext<KanbanContext>(options =>
             {
